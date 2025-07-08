@@ -8,5 +8,5 @@ Responsive tasarım ve modern bir görünüm sunar.
 ## Kurulum & Kullanım
 
 -> Repoyu klonla veya ZIP olarak indir:  
-   
+ ```bash 
    git clone https://github.com/MelisCk/first-try-website.git
