@@ -1,0 +1,376 @@
+@charset "utf-8";
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+header.ust{
+    background: url("overlay.png"),url("banner.jpg");
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* viewport height */
+    margin: 0;
+    padding: 0;
+}
+
+header h1{
+    position: relative;
+    font-size: 18px;
+    margin-left: 30px;
+    top: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    /* yazının tipiyle oynuyosun size değil genişlik yükseklik veremiyorsun o yüzden 
+    pixel vermiyoruz. veremiyoruz. size ise verebiliriz. bu px almadığından (en ince)100-900(en kalın) arasında
+    değer alır ( eklemediğimizde varsayılanı 400dür)*/
+    text-transform: uppercase;
+    /* tüm karakterleri büyük harf yapar */
+    font-family: 'Raleway', sans-serif;
+}
+header strong{
+    font-weight: 700;
+}
+header a{
+    text-decoration: none;
+    font-weight:800 ;
+    color: rgb(255, 233, 195);
+}
+header ul{
+    list-style: none;
+    /* liste elemanını kaldırdık */
+    position: relative;
+    float: right;
+    /* headerın sağına hizaladık */
+    right: 20px;
+    top:0;
+}
+header ul li{
+    display: block;
+    padding: 30px;
+    float: left;
+}
+header ul li a{
+    font-weight: 100;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #a9a9a9;
+    transition: 0.2s;
+}
+header ul li a:hover{
+    color: rgb(255, 255, 255);
+
+}
+header #banner{
+    width: 100%;
+    position: absolute;
+    top:40%;
+    text-align: center;
+}
+#banner h2{
+    font-size: 40px;
+    color: rgb(200, 195, 181);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom:20px;
+    
+}
+#banner p{
+    color: #aaa;
+    font-size: 22px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    line-height: 40px;
+    /* kelimeler arasında 40 px boşluk bırakır  */
+    font-weight: 100;
+    letter-spacing: 2px;
+    /* harfler arasında 2px boşluk */
+
+    
+}
+#banner a{
+    padding: 25px 35px;
+    border-radius: 25px;
+    background-color: rgb(70, 0, 0);
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+#bolum2{
+    width: 1000px;
+    margin: 0 auto;
+    /* sağ soldan auto ortala üstten alttan 0 */
+    padding: 50px 0;
+    /* içerikle üst alt 50px yanlarda 0lasın */
+}
+.kapsayici{
+    width: 1000px;
+    padding: 0 auto;
+}
+#bolum2 .kapsayici .sol{
+    width: 400px;
+    float: left;
+    padding-left: 70px;
+
+}
+#bolum2 h2{
+    font-family: 'Ralew', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color:#484848;
+    line-height:60px;
+}
+#bolum2 .kapsayici .sol p{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    color:#aaa;
+    line-height: 40px;
+}
+#bolum2 .sag{
+    width: 400px;
+    float: right;
+    padding-right: 50px;
+    margin-left:40px;
+}
+#bolum2 .kapsayici .sag p{
+    line-height: 30px;
+    color:#666;
+    margin-bottom: 20px;
+
+}
+.temizle{
+    clear: both;
+}
+
+#bolum3{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background: #f6f6f6;
+    text-align: center;
+}
+#bolum3 h2{
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Raleway',sans-serif;
+    color: #484848;
+}
+#bolum3 p{
+    margin: 40px 0;
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #111111;
+}
+#bolum3 .resim{
+    width: 500px;
+    float: left;
+    background: #fff;
+    margin: 50px 20px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px #ccc;
+}
+#bolum3 img{
+    width: 500px;
+    margin: 0;
+}
+#bolum3 .kapsayici2{
+    width: 1100px;
+    margin: 0 auto;
+}
+#bolum3 ul{
+    list-style: none;
+}
+#bolum3 ul li {
+    display: inline-block;
+}
+#bolum3 ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 20px 50px;
+    background: #f32853;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#bolum3 ul li:nth-child(2) a{
+    background: #323037;
+}
+
+
+#bolum4{
+    width: 100%;
+    padding-top: 50px;
+}
+#bolum4 h2{
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Raleway',sans-serif;
+    color: #484848;
+    margin-bottom: 30px;
+}
+#bolum4 h2+p{
+    font-size:18px;
+    color: #666;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+#bolum4 .bolumler{
+    width: 460px;
+    float: left;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+#bolum4 .kapsayici{
+    width: 1000px;
+    margin: 0 auto;
+}
+#bolum4 .bolumler .kucukresim{
+    float: right;
+    width: 130px;
+    margin: 10px;
+}
+#bolum4 .bolumler .kucukresim img{
+    border: 5px solid #b0b0b0;
+    border-radius: 100%;
+    width: 130px;
+}
+#bolum4 .bolumler .yazi{
+    float: left;
+    width: 290px;
+    text-align: right;
+    padding: 10px;
+    line-height: 25px;
+}
+#bolum4 .bolumler h3{
+    text-align: right;
+    font-size: 18px;
+    color: #484848;
+    margin-bottom: 10px;
+}
+#bolum4 .bolumler .yazi h3+p{
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+#bolum4 .bolumler:nth-child(2n) .yazi{
+    text-align: left;
+}
+#bolum4 .bolumler:nth-child(2n) .yazi h3{
+    text-align: left;
+}
+#bolum4 .bolumler:nth-child(2n) .kucukresim{
+    float: left;
+}
+#bolum4 .bolumler .yazi p:nth-child(3){
+    font-size: 18px;
+    color: #666;
+}
+#bolum5{
+    width: 100%;
+    height: 350px;
+    background: url(overlay.png),url(banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+#bolum5 .icerik{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    /* dikeyde ortalama */
+    text-align: center;
+}
+#bolum5 .icerik h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+#bolum5 .icerik p{
+    color: #aaa;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+#bolum5 .icerik a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 20px 35px;
+    background:#f32853;
+    text-decoration: none;
+    transition: 0.2s
+}
+#bolum5 .icerik a:hover{
+    background: crimson;
+}
+footer{
+    display: inline-block;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+}
+footer .sosyal{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+footer a{
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    transform: translateY();
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+footer a[title="facebook"]::before{
+    content: '';
+    background: url("facebook.png") no-repeat;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+}
+footer a[title="twitter"]::before{
+    content: '';
+    background: url(twitter.png)no-repeat;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+}
+footer a[title="linkedin"]::before{
+    content: '';
+    background: url(linkedin.png)no-repeat;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+}
+footer ul{
+    list-style: none;
+    text-align: center;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+footer ul li{
+    display: inline-block;
+    padding: 2px 25px;
+}
+footer ul li p{
+    margin: 0 30px;
+    font-size: 20px;
+    color: darkgrey;
+    font-family:'Raleway',sans-serif ;
+}
+footer ul li:nth-child(-n+2){
+    border-right: 2px solid #b4b1b1;
+}
